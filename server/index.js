@@ -1,2 +1,2 @@
-const commonFunction = require("common");
+const commonFunction = require("@yarn-workspace-tut/common");
 commonFunction();
