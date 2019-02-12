@@ -20,3 +20,10 @@ My replication of [a tutorial series by Ben Awad on YouTube](https://www.youtube
     * Make sure you rename package.json names, import and the dependency entry.
     * After renaming, remember to run `yarn install` again to update these names in code.
     * Confirm all is good by running `node ./server/index.js` again.
+12. Move packages to `packages` subfolder.
+13. Replace the workspaces entry in the root package.json with `"workspaces": ["packages/*"]`.
+14. Do `rm -rf ./node_modules/` and re-run `yarn install`.
+
+## Benefits of this methodology
+
+* External dependencies are shared accross projects - saving space and avoiding mismatched dependencies.
